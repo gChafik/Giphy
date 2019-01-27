@@ -13,15 +13,19 @@
     </head>
 <body>
 <div class="container">
+    
     <div id="giphies-view"></div>
 
-    <form id="giphy-form">
-            <label for="giphy-input">Add a Githy!</label>
+        <form id="giphy-form">
+            <label for="giphy-input"><b>Add a Giphy!</b></label>
             <input type="text" id="giphy-input"><br>
-      
+        
             <!-- Button triggers new giphy to be added -->
-            <input id="add-giphy" type="submit" value="Add a Giphy!">
-          </form>      
+            <input class = "btn btn-warning" id="add-giphy" type="submit" value="Add a Giphy!">
+            <span><input class="btn btn-warning" id="reset" type="submit" value="Reset"></span>
+        </form>  
+
+    <div id="gifs-appear-here"></div>      
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
