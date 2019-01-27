@@ -20,12 +20,12 @@ $("#add-giphy").on("click", function(event) {
     event.preventDefault();
     
     // This line will grab the text from the input box
-    var giphy = $("#giphy-input").val().trim();
+    var giphy = $("#giphy-input").val().trim().toLowerCase();
     // The movie from the textbox is then added to our array
     if(giphies.includes(giphy)){
         return;
     }
-    giphies.push(giphy);
+    giphies.push(giphy.toLowerCase());
     // calling renderButtons which handles the processing of our movie array
     renderButtons();
   });
